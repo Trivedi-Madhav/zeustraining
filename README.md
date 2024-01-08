@@ -7,7 +7,7 @@
 ## Task 1: TWEET CARD 
 TWEET CARD 
 ### Output
-[![Image Description](https://github.com/Trivedi-Madhav/zeustraining/blob/main/02%20HTML%20CSS%20EXAMPLE/02_HTML_CSS_OUTPUT.png?raw=true](https://github.com/Trivedi-Madhav/zeustraining/blob/main/01%20Tweet%20Card/TweetCard_Preview.png?raw=true)
+[Image Description](https://github.com/Trivedi-Madhav/zeustraining/blob/main/02%20HTML%20CSS%20EXAMPLE/02_HTML_CSS_OUTPUT.png?raw=true](https://github.com/Trivedi-Madhav/zeustraining/blob/main/01%20Tweet%20Card/TweetCard_Preview.png?raw=true)
 
 ## Task 2: HTML CSS EXAMPLE
 WORK WITH VARIOUS HTML TAGS ,HTML STRUCTURE AND CSS PROPERTIES
