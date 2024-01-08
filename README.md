@@ -1,4 +1,4 @@
-<h1 style="color: blue;"> Zeus Learning Intern Tasks - Madhav Trivedi</h1>
+<h1 style="color: blue !important;"> Zeus Learning Intern Tasks - Madhav Trivedi</h1>
 
 ## Task 1: TWEET CARD
 
