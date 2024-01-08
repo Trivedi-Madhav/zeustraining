@@ -3,7 +3,7 @@
 ## Task 1: TWEET CARD
 
 ### Description
-This project showcases a tweet card implementation.
+This task showcases a tweet card implementation.
 
 ### Output
 ![Tweet Card Preview](https://github.com/Trivedi-Madhav/zeustraining/blob/main/01%20Tweet%20Card/TweetCard_Preview.png?raw=true)
