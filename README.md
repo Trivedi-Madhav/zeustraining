@@ -1,22 +1,39 @@
-[Zeus Learning Intern Tasks]
+#<span style="color: blue;"> Zeus Learning Intern Tasks - Madhav Trivedi</span>
 
-# Madhav Trivedi 
+## Task 1: TWEET CARD
 
-## Task 1: TWEET CARD 
-TWEET CARD 
+### Description
+This project showcases a tweet card implementation.
 
 ### Output
-<img src="https://github.com/Trivedi-Madhav/zeustraining/blob/main/01%20Tweet%20Card/TweetCard_Preview.png?raw=true" >
+![Tweet Card Preview](https://github.com/Trivedi-Madhav/zeustraining/blob/main/01%20Tweet%20Card/TweetCard_Preview.png?raw=true)
+
+### How to Use
+Include any necessary instructions here if applicable.
+
+---
 
 ## Task 2: HTML CSS EXAMPLE
-WORK WITH VARIOUS HTML TAGS ,HTML STRUCTURE AND CSS PROPERTIES
+
+### Description
+This project focuses on working with various HTML tags, structure, and CSS properties.
 
 ### Output
-<img src="https://github.com/Trivedi-Madhav/zeustraining/blob/main/02%20HTML%20CSS%20EXAMPLE/02_HTML_CSS_OUTPUT.png?raw=true" width="200" heigh="300">
+![HTML/CSS Example](https://github.com/Trivedi-Madhav/zeustraining/blob/main/02%20HTML%20CSS%20EXAMPLE/02_HTML_CSS_OUTPUT.png?raw=true)
 
+### Implementation Details
+Add insights or instructions on implemented HTML tags and CSS properties.
 
-## Task 3: LOGIN PAGE USING CSS GRID/FLEXBOX 
-Developed Quantum Login page (Quantum login page)
+---
+
+## Task 3: LOGIN PAGE USING CSS GRID/FLEXBOX
+
+### Description
+Developed a Quantum Login page utilizing CSS Grid/Flexbox.
 
 ### Output
+Include a preview or link showcasing the Quantum Login page.
+
+### Implementation Details
+Discuss the usage of CSS Grid/Flexbox and any unique approaches or challenges faced during development.
 
