@@ -140,6 +140,12 @@ h1 {
 	background-color: $header-background-color;
 	background-blend-mode: overlay;
 }
+.disabled-components
+{
+	filter: grayscale(1);
+    pointer-events: none;
+    user-select: none;
+}
 .search-section {
 	color: $searchsectionfontcolor;
 	font-size: 12px;

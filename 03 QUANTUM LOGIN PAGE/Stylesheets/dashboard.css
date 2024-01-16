@@ -122,6 +122,14 @@ h1 {
   background-blend-mode: overlay;
 }
 
+.disabled-components {
+  filter: grayscale(1);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .search-section {
   color: #666;
   font-size: 12px;
