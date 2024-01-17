@@ -13,27 +13,27 @@ $footercolor: #e0e1e1;
 
 @font-face {
 	font-family: "Quicksand";
-	src: url(./QuicksandFonts/static/Quicksand-Regular.ttf);
+	src: url(../QuicksandFonts/static/Quicksand-Regular.ttf);
 	font-weight: 400;
 }
 @font-face {
 	font-family: "Quicksand";
-	src: url(./QuicksandFonts/static/Quicksand-Medium.ttf);
+	src: url(../QuicksandFonts/static/Quicksand-Medium.ttf);
 	font-weight: 500;
 }
 @font-face {
 	font-family: "Quicksand";
-	src: url(./QuicksandFonts/static/Quicksand-Bold.ttf);
+	src: url(../QuicksandFonts/static/Quicksand-Bold.ttf);
 	font-weight: 700;
 }
 @font-face {
 	font-family: "Quicksand";
-	src: url(./QuicksandFonts/static/Quicksand-Light.ttf);
+	src: url(../QuicksandFonts/static/Quicksand-Light.ttf);
 	font-weight: 300;
 }
 @font-face {
 	font-family: "Quicksand";
-	src: url(./QuicksandFonts/static/Quicksand-SemiBold.ttf);
+	src: url(../QuicksandFonts/static/Quicksand-SemiBold.ttf);
 	font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
@@ -77,6 +77,15 @@ h1 {
 	margin: 100px auto 32px;
 	background-color: $loginformcolor;
 	padding: 20px 32px;
+}
+#back-button
+{
+	transition: transform 0.3s ease;
+	&:hover
+	{
+		overflow: hidden; 
+		transform: scale(1.1);
+	}
 }
 .backgroundcolor {
 	background: url(./quantum\ screen\ assets/header.png) repeat;
@@ -143,6 +152,7 @@ input[type=text] {
 	width: 100% !important;
 }
 select {
+	font-weight: bold;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -162,6 +172,7 @@ select {
 	color: $dropdowncolor;
 }
 .sideLinks {
+	cursor: pointer;
 	display: grid;
 	justify-items: right;
 	font-size: 14px;
@@ -191,24 +202,36 @@ footer {
 	gap: 16px;
 }
 #login-form-title {
+	
 	display: grid;
 	grid-template-columns: 10px auto;
 	align-items: center;
 	font-family: $font-family_2;
 }
 .login-fields {
+
+	font-weight: bold;
 	width: 100% !important;
 	border: none !important;
 	border-bottom: 1px solid #e0e0e0 !important;
-	padding: 8px 0 !important;
+	padding: 10px !important;
 	font-size: 16px !important;
 	line-height: 20px !important;
+	&::placeholder {
+		font-weight: normal;
+	  }
+	&:focus
+	{
+		outline: none;
+	}
 }
 #backButton {
 	font-size: 24px;
 	cursor: pointer;
 }
 #form-title {
+	font-size: larger;
+    font-weight: bold;
 	font-size: 18px;
 	margin: 0;
 	justify-self: center;
@@ -230,17 +253,18 @@ footer {
 	justify-content: center;
 	font-size: 14px;
 	line-height: 18px;
-	color: $color_2;
+	color: $sidelinkcolor;
 	gap: 8px;
 	margin-bottom: 16px;
 	a {
-		color: $color_2;
+		color: $sidelinkcolor;
 		text-decoration: none;
 		font-weight: 600;
 	}
 }
 @media (max-width: 600px) {
 	#login-form {
+		width: max-content;
 		grid-template-columns: 1fr;
 	}
 }

@@ -33,7 +33,34 @@ $footer-background-color: #e0e1e1;
 		opacity: 1;
 	}
 }
+
+@font-face {
+	font-family: "Quicksand";
+	src: url(../QuicksandFonts/static/Quicksand-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(../QuicksandFonts/static/Quicksand-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(../QuicksandFonts/static/Quicksand-Bold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(../QuicksandFonts/static/Quicksand-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(../QuicksandFonts/static/Quicksand-SemiBold.ttf);
+	font-weight: 600;
+}
 body {
+	font-family: "Quicksand";
 	display: flex;
 	flex-direction: column;
 	place-items: center;
@@ -109,6 +136,8 @@ main {
 	align-items: center;
 	gap: 8px;
 	&:hover {
+		cursor: default	;
+		user-select: none;
 		border-bottom: 3px solid black;
 	}
 }
@@ -118,6 +147,17 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 8px;
+	&:hover {
+		cursor: default	;
+		user-select: none;
+		border-bottom: 3px solid black;
+	}
+}
+.course-favourite
+{
+	position:absolute;
+	right: 5%;
+    top: 10%;
 }
 .count {
 	font-weight: 700;
@@ -163,16 +203,18 @@ h1 {
 .courses {
 	border-top: 1px solid grey;
 	padding-top: 10px;
-	width: 95%;
+	width: 100%;
 	gap: 40px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-items: center;
 }
 .course-container {
-	background-color: $course-container-background-color;
+	position: relative;
+	box-sizing: border-box;
 	padding: 24px;
-	width: 95%;
+	background-color: $course-container-background-color;
+	width: 100%;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 10px;
@@ -224,11 +266,11 @@ h1 {
 	background-position: right;
 }
 .course-teacher-options {
-	width: 160px;
+	font-weight: bold;
 	font-family: $font-family_2;
-	font-size: 16px;
+	font-size: larger;
 	line-height: 20px;
-	width: 160px;
+	width: 90%;
 	padding: 5px 0;
 	border: none;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -359,7 +401,7 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	padding: 15px 44px;
-	width: 100%;
+	width: 70%;
 }
 .announcement {
 	&:hover {
@@ -382,7 +424,7 @@ h1 {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px 44px;
-	width: 100%;
+	width: 70%;
 	color: $notifybtnfontcolor;
 }
 .menu {
@@ -424,6 +466,10 @@ h1 {
 	* {
 		margin: 0px;
 	}
+}
+.course-title
+{
+	font-size: large;
 }
 .sub-heading {
 	margin: 10px 0px;

@@ -11,6 +11,10 @@ function getCourses(file) {
         jsonData.data.forEach(course => {
             
             var string = `<div class="course-container">
+            <div class="course-favourite">
+              <img class="${course.favourite.isDisable==true?"disabled-components":""}" id="course-favourite-img" src="./icons/favourite.svg">
+            </div>
+            ${course.heading.isExpired==true?"<label style='position:absolute;top:0;left:0;background:#C24641;color:white'>Expired</label>":""}
             <div class="course-img-container">
                 <img class="course-img" src="${course.heading.cover}">
             </div>
@@ -22,14 +26,13 @@ function getCourses(file) {
                     <select class="course-teacher-options"><option>${course.teacher}</option></select>
                 </div>
                 <div>
-                    <label></label>
-                    <label></label>
-                    <label></label>
+                    <label>${course.duration.students}</label>
+                    <label>${course.duration.date}</label>
                 </div>
             </div>
             <div class="course-options">
-                <img src="./icons/preview.svg">
-                <img src="./icons/manage course.svg">
+                <img class="" src="./icons/preview.svg">
+                <img class="" src="./icons/manage course.svg">
                 <img src="./icons/grade submissions.svg">
                 <img src="./icons/reports.svg">
             </div>

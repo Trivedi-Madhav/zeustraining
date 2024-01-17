@@ -6,6 +6,7 @@
     <title>Quantum Login</title>
     <link rel="stylesheet" href="./Stylesheets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./Scripts/Login.js"></script>
 </head>
 <body>
     <header>
@@ -14,24 +15,24 @@
     </header>
        <main id="login-form">
         <div id="login-form-title">
-            <img src="./quantum screen assets/icons/back.svg" alt="">
+            <img id="back-button" src="./quantum screen assets/icons/back.svg" alt="">
           <h1 id="form-title">Log in with Quantum</h1>
         </div>
         <div class="options">
             <div class="radio-button">
-                <div class="Radio-District">
+                <div class="Radio-District" onclick="handleRadioClick('dist')">
                     <span class="radio-icon">
                         <img src="./quantum screen assets/icons/radio-button-on.svg" tabindex="0" alt="radio button on">
                     </span>
                     <label for="dist">District</label>
-
+                    <input type="radio" name="radioGroup" id="dist" style="display: none;">
                 </div>
-                <div class="Radio-School">
+                <div class="Radio-School" onclick="handleRadioClick('school')">
                     <span class="radio-icon">
                         <img src="./quantum screen assets/icons/radio-button-off.svg" tabindex="0" alt="radio button off">
                     </span>
-
-                    <label for="dist">Independent School</label>
+                    <label for="school">Independent School</label>
+                    <input type="radio" name="radioGroup" id="school" style="display: none;">
                 </div>
             </div>
         </div>
@@ -63,7 +64,8 @@
             </div>
 
             <div class="remember-me">
-                <img src="./icons/checkbox-checked.svg" tabindex="0" alt="checkbox unchecked">
+                <img id="remember-me-img" src="./icons/checkbox-unchecked.svg" tabindex="0" alt="checkbox unchecked" onclick="remember_user();">
+                <input id="remember-me" type="checkbox" name="remember-me" id="dist" style="display: none;">
                 <label for="remember-me">Remember Me</label>
             </div>
 
