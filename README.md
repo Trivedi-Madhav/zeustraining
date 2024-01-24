@@ -43,7 +43,7 @@ Developed a todo list using javascript
 
 ### Output
 
-![Quantum Login Page](https://github.com/Trivedi-Madhav/zeustraining/blob/main/03%20QUANTUM%20LOGIN%20PAGE/03_Quantum_OUTPUT.png?raw=true)
+![Quantum Login Page](https://github.com/Trivedi-Madhav/zeustraining/blob/main/04%20TODO%20LIST/Assets/04_TODOLIST_OUTPUT.png?raw=true)
 
 
 
