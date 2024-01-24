@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     if (localStorage.getItem("tasks")) {
         JSON.parse(localStorage.getItem("tasks")).forEach(function (value) {
             let li = document.createElement('li');
-            li.innerHTML = value + '<button class="task-remove-btn">Remove</button>';
+            li.innerHTML = "<input class='multiple-selection' type='checkbox'>"+"<p>"+value+"</p>" + '<button class="task-remove-btn">X</button>';
             taskList.appendChild(li);
         });
     }
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         var taskInput = document.getElementById('taskInput');
         if (taskInput.value.trim() !== '') {
             let li = document.createElement('li');
-            li.innerHTML = taskInput.value + '<button class="task-remove-btn">Remove</button>';
+            li.innerHTML = "<input class='multiple-selection' type='checkbox'>"+"<p>"+taskInput.value+"</p>" + '<button class="task-remove-btn">X</button>';
             taskList.appendChild(li);
             saveTaskToLocalStorage(taskInput.value);
             taskInput.value = '';
@@ -23,17 +23,52 @@ document.addEventListener("DOMContentLoaded", (e) => {
         }
     }
     function saveTaskToLocalStorage(task) {
+        let tasks = [];
       
-        var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        if (localStorage.tasks) {
+     
+          tasks = JSON.parse(localStorage.tasks);
+        }
+      
         tasks.push(task);
-        localStorage.setItem('tasks', JSON.stringify(tasks));
-    }
+      
+        localStorage.tasks = JSON.stringify(tasks);
+      }
 taskList.addEventListener("click",e=>{
     if(e.target.classList.contains("task-remove-btn"))
-    {
-        e.target.parentElement.remove();
+    {   
+        let value =e.target.parentElement.children[1].innerText;
+        console.log(value);
+       removeTask(value);
+       e.target.parentElement.remove();
     }
-});
 
+});
+document.querySelector("#delete-selected-btn").addEventListener("click",function(event){
+    let selectionList = document.querySelectorAll(".multiple-selection:checked");
+    if(selectionList.length===0)
+    {
+        alert("Nothing Is Selected");
+    }
+    selectionList.forEach(el=>{
+        let value =el.parentElement.children[1].value;
+        console.log(value);
+        removeTask(value);
+        el.parentElement.children[1].parentElement.remove();
+    });
+});
+function removeTask(value)
+{
+    let tasks = [];
+      
+    if (localStorage.tasks) {
+ 
+      tasks = JSON.parse(localStorage.tasks);
+    }
+  
+    tasks = tasks.filter((task) => task !== value);
+    localStorage.tasks = JSON.stringify(tasks);
+    
+}
 
 
