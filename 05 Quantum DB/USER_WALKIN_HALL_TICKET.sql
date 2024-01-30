@@ -1,0 +1,1 @@
+SELECT startTime,endTime,walkInLocation FROM quantum.walkindetails inner join userselectedwalkindetails using(walkinid) inner join walkintimeslots on walkintimeslots.walkInTimeSlotsid=userselectedwalkindetails.timeSlotID where user_id=2;
